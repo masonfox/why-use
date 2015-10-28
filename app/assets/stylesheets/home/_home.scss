@@ -1,0 +1,217 @@
+.land {
+  background: $main;
+  // background: #614687;
+}
+
+.land-center {
+  position: relative;
+  top: 35vh;
+  translate: transition(-50%);
+}
+
+.land-text {
+  transition: all 1s ease;
+}
+
+.rotate {
+  border-bottom: 2px solid rgba(0, 150, 136,.4);
+}
+
+// search
+.searchButton { // triggger button
+  margin-top: 2em;
+}
+
+#close-search {
+  color: #fff;
+  font-size: 1.5em;
+  position: relative;
+  cursor: pointer;
+}
+
+.search-holder {
+  @extend .land-center;
+}
+
+.searchDrop {
+  opacity:    .4; 
+  background: #000; 
+  width:      100%;
+  height:     100%; 
+  z-index:    10;
+  top:        0; 
+  left:       0; 
+  position:   fixed; 
+  transition: all 600ms ease;
+  visibility: hidden;
+}
+
+.searchDrop input[type=search] {
+  border: none;
+  border-bottom: 2px solid #fff;
+  box-shadow: none;
+  font-size: 3.5em;
+  width: 100%;
+  height: auto;
+  padding: .5em;
+  background: #000;
+  color: #fff;
+  text-align: center;
+  
+  &::placeholder {
+   color: #aaaaaa;
+   position:relative;
+   padding:0;
+   transition: all 0.5s ease;
+  }
+      
+  &:hover::placeholder, &:focus::placeholder {
+    padding-top: 3em;
+  }
+}
+
+.land-more {
+  .light {
+    font-weight: 100;
+  }
+}
+
+.img-round {
+  height: 150px;
+  width: 150px;
+  border-radius: 100%;
+  float: right;
+  position: relative;
+  top: 1em;
+}
+
+.simple {
+  background: $main;
+}
+
+.overview {
+  background: #fff;
+  margin: 4em 0;
+}
+
+.write {
+/*  background: #FF5722;*/
+  background: #573B7E;
+}
+
+.about {
+  padding: 4em 0;
+}
+
+footer {
+  background: #614687;
+  padding: .5em;
+}
+
+// utilities
+.light {
+  color: #fff;
+  font-weight: inherent;
+}
+.dark {
+  color: $dark;
+  font-weight: inherent;
+}
+.second {
+  color: $second;
+  font-weight: inherent;
+}
+.chevdown {
+  height: 40px;
+  width: 40px;
+  margin-top: -1em;
+}
+.half-spacing {
+  margin-top: 1em;
+}
+.one-spacing {
+  margin-top: 2em;
+}
+.two-spacing {
+  margin-top: 4em;
+}
+
+// base
+.container {
+  min-height: 100vh;
+}
+.three-quarter {
+  min-height: 75vh;
+  margin: 2em 0;
+}
+.half {
+  min-height: 50vh;
+  padding: 2em 0;
+  margin: 1em;
+}
+.quarter {
+  min-height: 25vh;
+  padding: 2em 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font;
+  font-weight: 200;
+}
+
+// edit mixin
+.button {
+  border: 1px solid rgba(255,255,255,.5);
+  background: transparent;
+  font-family: $font;
+  font-weight: 300;
+  
+  &:hover, &:focus {
+    background: rgba(255,255,255,.3);
+    border-color: rgba(255,255,255,0);
+  }
+}
+
+.overlay-block {
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.55);
+  overflow: hidden;
+  transition: all 700ms ease;
+  opacity: 0;
+  border-bottom: .3em solid transparent;
+  
+    h2 {
+      text-align: center;
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #fff;
+    }
+
+  &:hover, &:focus {
+    opacity: 1;
+  }
+}
+
+#foundation {
+  background: #B2DCE5;
+}
+#angular {
+  background: #E6474D;
+}
+#bootstrap {
+  background: #573B7E;
+}
+#yeoman{
+  background: #FCAF17;
+}
+#grunt{
+  background: #5E442C;
+}
+#rails {
+  background: #9D2F39;
+}

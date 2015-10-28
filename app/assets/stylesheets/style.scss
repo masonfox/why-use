@@ -1,0 +1,9 @@
+app/assets/stylesheets/style.scss
+// // end
+// @import "base/variables";
+// @import "home/home";
+
+// legacy .css rails includes
+*= require_self
+*= require style
+*= require foundation_and_overrides
